@@ -1,25 +1,49 @@
-git init – Initialize a new Git repository
+git init
+Initialized a new Git repository in the project folder to start version control.
 
-git status – Check the status of files (tracked/untracked/modified)
+git status
+Checked the current state of the repository to see untracked and modified files.
 
-git add <file> – Add file to staging area
+git add index.html about.html
+Added files to the staging area before committing.
 
-git commit -m "message" – Save changes with a message
+git commit -m "Initial commit with index and about pages"
+Saved the first version of the project with a meaningful message.
 
-git log --oneline – View commit history in short form
+git branch feature
+Created a new branch called 'feature' to work on changes separately.
 
-git branch – List branches
+git checkout feature
+Switched to the feature branch to make updates.
 
-git branch <name> – Create new branch
+git add about.html
+Added updated about page content in feature branch.
 
-git checkout <name> – Switch to a branch
+git commit -m "Add feature branch content to about page"
+Committed changes made in the feature branch.
 
-git merge <branch> – Merge branch into current branch
+git checkout main
+Switched back to the main branch.
 
-git log --oneline --graph --all – View full commit history graph
+git merge feature
+Merged feature branch changes into the main branch.
 
-git revert HEAD – Undo last commit by creating a new commit
+git log --oneline --graph --all
+Viewed commit history in a simplified graph format.
 
-git remote add origin <url> – Connect local repo to GitHub
+git revert HEAD
+Undid the last commit by creating a new commit that reverses it.
 
-git push -u origin main – Push code to GitHub
+echo "*.log" > .gitignore
+echo "temp/" >> .gitignore
+Created a .gitignore file to ignore log files and temp folder.
+
+git add .gitignore
+git commit -m "Add gitignore for log files and temp folder"
+Tracked and saved ignore rules.
+
+git remote add origin https://github.com/ChocoWalnut/git_assignment.git
+Connected local repository to GitHub remote repository.
+
+git push -u origin main
+Pushed all commits to GitHub and set upstream branch.
